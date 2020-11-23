@@ -70,8 +70,16 @@ console.log(myPenguin.fly());
 myPenguin.canFly=true;
 console.log(myPenguin.fly());
 
-for (let i = 0; i < myPenguin.length; i++) {
+for (let i in myPenguin) {
     console.log(myPenguin[i]);
-    
 }
-console.log(myPenguin[0]);
+
+for (let [key] of Object.entries(myPenguin)) {
+    console.log(key);
+  }
+  for (let [key,value] of Object.entries(myPenguin)) {
+    console.log(value);
+  }
+
+
+
