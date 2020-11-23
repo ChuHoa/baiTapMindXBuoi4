@@ -76,10 +76,10 @@ for (let i in myPenguin) {
 
 for (let [key] of Object.entries(myPenguin)) {
     console.log(key);
-  }
-  for (let [key,value] of Object.entries(myPenguin)) {
+}
+for (let [key,value] of Object.entries(myPenguin)) {
     console.log(value);
-  }
+}
 
 
 
