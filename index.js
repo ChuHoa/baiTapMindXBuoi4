@@ -36,6 +36,7 @@ console.log(lastcolor)
 
 
 //Bài 2
+
 let myPenguin={
 
     name:"Aptenodytes",
@@ -48,10 +49,29 @@ myPenguin.canFly=false;
 console.log(myPenguin.canFly);
 
 myPenguin.chirp=function(){
-    return console.log("CHIRP CHIRP! Is this what penguins sound like?")
+    return "CHIRP CHIRP! Is this what penguins sound like?"
 }
-console.log(myPenguin.chirp);
+console.log(myPenguin.chirp())
 myPenguin.sayHello=function(){
     return "Hi there, Im a penguin, my name's "+this.name;
 }
+console.log(myPenguin.sayHello())
 
+myPenguin.name="Penguin McPenguinFace";
+console.log(myPenguin.sayHello())
+
+myPenguin.fly=function(){
+    if (this.canFly==true) {
+        return "I can fly"
+    }else{
+        return "I can't fly"}
+}
+console.log(myPenguin.fly());
+myPenguin.canFly=true;
+console.log(myPenguin.fly());
+
+for (let i = 0; i < myPenguin.length; i++) {
+    console.log(myPenguin[i]);
+    
+}
+console.log(myPenguin[0]);
